@@ -1,0 +1,11 @@
+
+<div class="main">
+  <input type="number" [(ngModel)]="value">
+  <app-default [fromParent] = "value"></app-default>
+  <div class="container">
+    <app-on-push [fromParent] = "value"></app-on-push>
+    <app-change-detector [fromParent] = "value"></app-change-detector>
+  </div>
+</div>
+
+<router-outlet></router-outlet>
